@@ -47,6 +47,7 @@ import localeDa from '@angular/common/locales/da';
 import localeSv from '@angular/common/locales/sv';
 import { BetterButtonComponent } from './better-button/better-button.component';
 import { MyProfileComponent } from './my-profile/my-profile.component';
+import { UserManagementComponent } from './user-management/user-management.component';
 
 registerLocaleData(localeFr);
 registerLocaleData(localeDe);
@@ -97,7 +98,8 @@ registerLocaleData(localeSv);
         FileViewComponent,
         BlobViewComponent,
         BetterButtonComponent,
-        MyProfileComponent
+        MyProfileComponent,
+        UserManagementComponent
     ],
     providers: [
         PreviewService,

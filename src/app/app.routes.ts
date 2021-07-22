@@ -29,6 +29,7 @@ import { FileViewComponent } from './file-view/file-view.component';
 import { BlobViewComponent } from './file-view/blob-view.component';
 import { TutorialPageComponent } from './tutorial-page/tutorial-page.component';
 import { MyProfileComponent } from './my-profile/my-profile.component';
+import { UserManagementComponent } from './user-management/user-management.component';
 
 export const appRoutes: Routes = [
   { path: 'files/:nodeId/view', component: FileViewComponent, canActivate: [AuthGuardEcm], outlet: 'overlay' },
@@ -78,6 +79,11 @@ export const appRoutes: Routes = [
               {
                 path: 'my-profile',
                 component: MyProfileComponent,
+                canActivate: [ AuthGuardEcm ]
+              },
+              {
+                path: 'user-management',
+                component: UserManagementComponent,
                 canActivate: [ AuthGuardEcm ]
               }
 

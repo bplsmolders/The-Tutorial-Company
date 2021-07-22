@@ -24,7 +24,7 @@
                 </a> -->
                 <a mat-list-item class="adf-sidenav-link" routerLink="/apps">
                     <mat-icon matListIcon class="sidenav-menu-icon">pending_actions</mat-icon>
-                    <div class="sidenav-menu-label" *ngIf="!isMenuMinimized()">Apps</div>
+                    <div class="sidenav-menu-label" *ngIf="!isMenuMinimized()">Processen en Taken</div>
                 </a>
                 <a mat-list-item class="adf-sidenav-link" routerLink="/documentlist">
                     <mat-icon matListIcon class="sidenav-menu-icon">folder_open</mat-icon>
@@ -32,11 +32,15 @@
                 </a>
                 <a mat-list-item class="adf-sidenav-link" routerLink="/tutorial-page">
                     <mat-icon matListIcon class="sidenav-menu-icon">school</mat-icon>
-                    <div class="sidenav-menu-label" *ngIf="!isMenuMinimized()">Trainings & Trainers</div>
+                    <div class="sidenav-menu-label" *ngIf="!isMenuMinimized()">Training Info</div>
                 </a>
                 <a mat-list-item class="adf-sidenav-link" routerLink="/my-profile">
                     <mat-icon matListIcon class="sidenav-menu-icon">face</mat-icon>
                     <div class="sidenav-menu-label" *ngIf="!isMenuMinimized()">Profile</div>
+                </a>
+                <a mat-list-item class="adf-sidenav-link" routerLink="/user-management">
+                    <mat-icon matListIcon class="sidenav-menu-icon">group_add</mat-icon>
+                    <div class="sidenav-menu-label" *ngIf="!isMenuMinimized()">User Management</div>
                 </a>
                 <a mat-list-item adf-logout class="adf-sidenav-link">
                     <mat-icon matListIcon class="sidenav-menu-icon">exit_to_app</mat-icon>
